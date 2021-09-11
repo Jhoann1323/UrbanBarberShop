@@ -19,14 +19,16 @@
                                          >
 
                                 <p:column headerText="Puntaje" filterBy="#{c.puntaje}" filterMatchMode="contains" >
-                                    <h:outputText value="#{c.puntaje}">
+                                    <h:outputText value="#{c.puntaje}" >
                                         <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                                     </h:outputText>
                                 </p:column>
 
                                 <p:column headerText="Comentario" >
                                     <h:outputText value="#{c.comentario}"  /> 
+                            
                                 </p:column>
+                                   
 
                                 <p:column headerText="Numero factura" >
                                     <h:outputText value="#{c.facturaIdFactura}"  /> 

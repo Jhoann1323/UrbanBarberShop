@@ -17,8 +17,10 @@
                                          var="c" paginator="true"  rows="15" rowSelectMode="add" paginatorPosition="bottom"
                                          >
 
-                                <p:column headerText="Numero Calificación" filterBy="#{c.idCalificacion}" filterMatchMode="contains" >
-                                    <h:outputText value="#{c.idCalificacion}"  /> 
+                                <p:column headerText="Numero Calificación" filterBy="#{c.idCalificacion}" filterMatchMode="contains"  >
+                                    <h:inputText value="#{c.idCalificacion}" id="numcalif" required="true " ></h:inputText>
+                                                    
+                             
                                 </p:column>
 
                                 <p:column headerText="Puntaje" filterBy="#{c.puntaje}" filterMatchMode="contains" >
